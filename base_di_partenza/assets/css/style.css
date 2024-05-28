@@ -94,6 +94,39 @@ main {
   padding: 2em 1em;
   margin-bottom: 1.5em;
 }
+.btnFixed {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.btnFixed svg {
+  width: 20px;
+}
+.divBtns {
+  outline: 3px solid white;
+  border-radius: 15px;
+}
+#blueBtn {
+  position: fixed;
+  bottom: 92px;
+  right: 10px;
+  z-index: 99;
+  fill: blue;
+}
+#calendar {
+  margin-top: 1rem;
+}
+#tornaSu {
+  position: fixed;
+  bottom: 1rem;
+  right: 10px;
+}
+#tornaSu .btnFixed {
+  fill: orange;
+}
 @media screen and (min-width: 700px) {
   main {
     padding: 2em;
@@ -140,13 +173,16 @@ h1 {
   margin-bottom: 0.7em;
 }
 article h1 span {
+  display: inline-block;
   position: relative;
+  z-index: 0;
 }
 article h1 img {
   position: absolute;
   width: 100%;
+  z-index: -1;
   opacity: 0.6;
-  bottom: -0.8rem;
+  bottom: -1.1rem;
   left: 0;
 }
 /* .divUnderline {
@@ -368,37 +404,6 @@ footer {
   padding: 1em;
   text-align: center;
   font-size: 1.2rem;
-}
-.btnFixed {
-  width: 60px;
-  height: 60px;
-  background-color: white;
-  opacity: 0.8;
-  border-radius: 15px;
-  cursor: pointer;
-}
-.btnFixed svg {
-  width: 20px;
-}
-.divBtns {
-  outline: 3px solid white;
-  border-radius: 15px;
-}
-#blueBtn {
-  position: fixed;
-  bottom: 92px;
-  right: 10px;
-  z-index: 99;
-  fill: blue;
-}
-#calendar {
-  margin-top: 1rem;
-}
-#tornaSu {
-  position: fixed;
-  bottom: 1rem;
-  right: 10px;
-  fill: orange;
 }
 
 @media screen and (min-width: 800px) {
